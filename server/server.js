@@ -14,9 +14,9 @@
 
 */
 
-var app = Npm.require('http').createServer();
-var io = Npm.require('socket.io').listen(app);
-var Fiber = Npm.require('fibers');
+var app = Meteor.npmRequire('http').createServer();
+var io = Meteor.npmRequire('socket.io').listen(app);
+var Fiber = Meteor.npmRequire('fibers');
 
 app.listen(4000);               // socketio listens on 4000
 
